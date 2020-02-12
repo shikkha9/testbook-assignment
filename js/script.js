@@ -8,7 +8,7 @@ for (i = 0; i < acc.length; i++) {
 
     var panel = this.nextElementSibling;
     if (panel.style.display === "inline-block") {
-        panel.style.display = "none";
+        panel.style.display = "none";   
     } else {
         panel.style.display = "inline-block";
     } 
