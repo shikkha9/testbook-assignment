@@ -1,0 +1,157 @@
+  * {
+  box-sizing: border-box;
+  }
+
+  /* Style the body */
+  body {;
+  background-color: #f6f8f9;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  }
+  .wrapper{
+  width: 100%;
+  padding: 5% 15%;
+
+  }
+  /* Header/logo Title */
+  .header {
+  padding-bottom: 8.5%;
+  color: #2e2f2f;
+
+  }
+
+  /* Increase the font size of the heading */
+  .header h1 {
+  font-size: 20px;
+  }
+
+  .float_left{
+  float: left;
+  }
+
+
+  .margin_bottom_20{
+  margin-bottom: 20px;
+  }
+  /*''''''''''''''''''''''''''''''*/
+  .main{
+  // padding: 25px 80px;
+  }
+  .panel{
+  margin-bottom: 20px;
+  width: 33%;
+  }
+  .main-panel{
+  display: none;
+  width: 100%;
+  }
+  .accordion {
+  background-color: #e1eff6;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.4s;
+  }
+  .accordion .months{
+  font-size: 20px;
+  font-weight: bold;  
+  }
+  .badge{
+  border-radius: 15px;
+  border: 1px solid gray;
+  padding: 2px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: gray;
+  font-size: 12px;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+  background-color: #ccc;
+
+  }
+  .active{
+  border-left-style: solid;
+  border-left-color: blue ;
+  border-left: 5px solid blue;
+
+
+  }
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+  padding: 0 18px;
+  background-color: white;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  border: 10px solid #f6f8f9;
+  width: 33.33%;
+  }
+  .open{
+  background: black;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 4px;
+  height: 15px;
+  width: 15px;
+  }
+  .open:before{
+  content:"^";
+  }
+  .close{
+  background: black;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 4px;
+  height: 15px;
+  width: 15px;
+  /* Safari */
+  -webkit-transform: rotate(-180deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-180deg);
+
+  /* IE */
+  -ms-transform: rotate(-180deg);
+
+  /* Opera */
+  -o-transform: rotate(-180deg);
+  }
+  .close:before{
+  content:"^";
+  }
+  .float_right{
+  float: right;
+  }
+  select{
+  padding: 5px;
+  border: none;
+  width: 200px;
+  }
+  /*''''''''''''''''''''''''''''''*/
+  .panel-badge{
+  background: #939393;
+  color: white;
+  }
+
+
+  /* Responsive layout - */
+  @media screen and (max-width: 700px) {
+   .panel {
+  padding: 0 18px;
+  background-color: white;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  border: 10px solid #f6f8f9;
+  width: 100%;
+  }
+  }
+
+ 
